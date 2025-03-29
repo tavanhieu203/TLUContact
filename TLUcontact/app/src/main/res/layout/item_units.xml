@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtUnitname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtUnitphone"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUnitname"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_call"
+            android:contentDescription="Gọi điện"
+            android:padding="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- Icon nhắn tin -->
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@id/imgCall"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_message"
+            android:contentDescription="Nhắn tin"
+            android:padding="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
